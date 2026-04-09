@@ -2,6 +2,52 @@
 
 A compact, local-first demo of the "Neuro-Vault" architecture for a zero-trust healthcare environment.
 
+## Judge quick walkthrough (2 minutes)
+
+Use this section during evaluation.
+
+### 1. Run the demo
+
+From the project root:
+
+```bash
+python neuro_vault_demo.py --query "Patient has SOB after CABG with low SpO2"
+```
+
+Windows (if `python` is not available in PATH):
+
+```powershell
+C:/Users/Username/AppData/Local/Programs/Python/Python310/python.exe neuro_vault_demo.py --query "Patient has SOB after CABG with low SpO2"
+```
+
+### 2. Sample input
+
+```text
+Patient has SOB after CABG with low SpO2
+```
+
+### 3. Sample output (real run)
+
+```text
+Neuro-Vault Clinical Intelligence Engine (Demo)
+========================================================================
+Query: Patient has SOB after CABG with low SpO2
+Expanded Query: Patient has SOB (shortness of breath) after CABG (coronary artery bypass graft) with low SpO2 (oxygen saturation) shortness of breath sob dyspnea breathlessness coronary artery bypass graft cabg bypass surgery oxygen saturation spo2 o2 saturation
+Decision: ANSWER | Confidence=0.584 | Threshold=0.230
+Generation Mode: Deterministic fallback
+
+Answer:
+
+Patient admitted on 08/04/2026 after CABG (coronary artery bypass graft) performed 6 days ago.
+[source: TN-GH-OP-001#chunk-001] Guideline hint: For post-CABG breathlessness, evaluate fluid
+overload and pulmonary edema, monitor oxygen saturation trends, and repeat ECG if symptoms
+persist. [source: KG#KG-001]
+
+Source Trace:
+- TN-GH-OP-001#chunk-001 score=0.584 (base=0.536, lex=0.714, entity=0.667, kg=0.207)
+```
+
+
 ## What this demo includes
 
 - Local semantic retrieval over clinical records (no cloud dependency)
@@ -32,13 +78,13 @@ A compact, local-first demo of the "Neuro-Vault" architecture for a zero-trust h
 From project root:
 
 ```bash
-python3 neuro_vault_demo.py --query "Patient has SOB after CABG with low SpO2"
+python neuro_vault_demo.py --query "Patient has SOB after CABG with low SpO2"
 ```
 
 Show debug scores:
 
 ```bash
-python3 neuro_vault_demo.py \
+python neuro_vault_demo.py \
   --query "GRBS 298 mg/dL management" \
   --show-debug
 ```
@@ -46,7 +92,7 @@ python3 neuro_vault_demo.py \
 Trigger abstention for uncertain queries:
 
 ```bash
-python3 neuro_vault_demo.py \
+python neuro_vault_demo.py \
   --query "Treatment protocol for condition not in records" \
   --abstain-threshold 0.35
 ```
@@ -54,7 +100,7 @@ python3 neuro_vault_demo.py \
 Use local Ollama if running at `http://127.0.0.1:11434`:
 
 ```bash
-python3 neuro_vault_demo.py \
+python neuro_vault_demo.py \
   --query "Post-op DVT prophylaxis dose" \
   --use-ollama \
   --ollama-model "mistral:7b-instruct-q4_K_M"
