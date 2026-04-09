@@ -1,0 +1,27 @@
+[
+  {
+    "id": "TN-GH-OP-001",
+    "title": "Post CABG breathlessness follow-up",
+    "text": "Patient admitted on 08/04/2026 after CABG performed 6 days ago. At 10:30 AM, patient developed SOB with SpO2 89%. Furosemide 40 mg IV was administered at 10:45 AM. Oxygen started at 2 L/min and SpO2 improved to 95% by 11:15 AM. ECG showed no new ischemic changes."
+  },
+  {
+    "id": "TN-GH-OP-002",
+    "title": "Diabetes outpatient glucose management",
+    "text": "Known type 2 diabetes mellitus on metformin 500 mg twice daily. GRBS recorded at 298 mg/dL on 09/04/2026 at 07:10 AM. Sliding-scale insulin 6 units SC was administered. Repeat capillary blood glucose at 09:15 AM was 232 mg/dL."
+  },
+  {
+    "id": "TN-GH-IP-003",
+    "title": "Community acquired pneumonia treatment note",
+    "text": "Fever with productive cough for 3 days and mild dyspnea. Chest X-ray suggests right lower lobe infiltrate. Started ceftriaxone 1 g IV once daily and azithromycin 500 mg oral. Blood pressure remained stable through the shift."
+  },
+  {
+    "id": "TN-GH-IP-004",
+    "title": "Acute wheeze and nebulization response",
+    "text": "Episode of wheeze and breathlessness at 21:05. Nebulized salbutamol 2.5 mg with ipratropium was given. Respiratory rate reduced from 30/min to 20/min within 25 minutes. No chest pain reported after treatment."
+  },
+  {
+    "id": "TN-GH-PROT-005",
+    "title": "Post-operative DVT prophylaxis protocol",
+    "text": "Post-operative DVT prophylaxis protocol recommends enoxaparin 40 mg SC once daily. Hold dose in active bleeding or severe renal dysfunction. Continue early mobilization and hydration monitoring."
+  }
+]

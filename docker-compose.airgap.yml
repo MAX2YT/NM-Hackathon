@@ -1,0 +1,17 @@
+services:
+  neuro-vault-demo:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./:/app:ro
+    command:
+      [
+        "python",
+        "neuro_vault_demo.py",
+        "--query",
+        "Patient has SOB after CABG with low SpO2"
+      ]
+    network_mode: "none"
+    read_only: true
+    tmpfs:
+      - /tmp

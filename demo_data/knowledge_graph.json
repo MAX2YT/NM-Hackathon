@@ -1,0 +1,47 @@
+{
+  "concepts": [
+    {
+      "id": "KG-001",
+      "label": "post_cabg_respiratory_distress",
+      "triggers": [
+        "cabg",
+        "shortness of breath",
+        "sob",
+        "spo2"
+      ],
+      "recommendation": "For post-CABG breathlessness, evaluate fluid overload and pulmonary edema, monitor oxygen saturation trends, and repeat ECG if symptoms persist."
+    },
+    {
+      "id": "KG-002",
+      "label": "hyperglycemia_grbs",
+      "triggers": [
+        "grbs",
+        "capillary blood glucose",
+        "hyperglycemia",
+        "insulin"
+      ],
+      "recommendation": "If capillary glucose exceeds 250 mg/dL, consider correctional insulin, hydration review, and repeat bedside glucose in 1-2 hours."
+    },
+    {
+      "id": "KG-003",
+      "label": "dvt_prophylaxis_post_op",
+      "triggers": [
+        "dvt prophylaxis",
+        "enoxaparin",
+        "post-operative"
+      ],
+      "recommendation": "Standard prophylaxis is enoxaparin 40 mg subcutaneous once daily with renal and bleeding risk adjustment."
+    },
+    {
+      "id": "KG-004",
+      "label": "asthma_exacerbation",
+      "triggers": [
+        "wheeze",
+        "breathlessness",
+        "salbutamol",
+        "ipratropium"
+      ],
+      "recommendation": "For acute wheeze, monitor respiratory rate and oxygen saturation after bronchodilator administration and reassess if distress continues."
+    }
+  ]
+}
